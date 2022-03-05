@@ -20,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'v1', 'namespace'=>'Auth'], function () {
     Route::post('/signin', 'SignInController');
     Route::get('/user', 'MainController');
-    Route::post('/logout', 'MainController@logout');
+    Route::post('/logout', 'SignOutController');
 });
