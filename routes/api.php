@@ -21,4 +21,5 @@ Route::group(['prefix'=>'v1', 'namespace'=>'Auth'], function () {
     Route::post('/signin', 'SignInController');
     Route::get('/user', 'MainController');
     Route::post('/logout', 'SignOutController');
+    Route::get('/test', 'TestController');
 });
